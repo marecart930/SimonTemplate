@@ -16,6 +16,11 @@ namespace SimonSays
     {
         //TODO: create a List to store the pattern. Must be accessable on other screens
         public static List<int> patternList = new List<int>();
+        public static SoundPlayer green = new SoundPlayer (Properties.Resources.green);
+        public static SoundPlayer yellow = new SoundPlayer(Properties.Resources.yellow);
+        public static SoundPlayer blue = new SoundPlayer(Properties.Resources.blue);
+        public static SoundPlayer red = new SoundPlayer(Properties.Resources.red);
+        public static SoundPlayer gameOver = new SoundPlayer(Properties.Resources.mistake);
         public Form1()
         {
             InitializeComponent();
