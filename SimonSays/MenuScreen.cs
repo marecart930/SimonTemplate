@@ -20,16 +20,17 @@ namespace SimonSays
         {
             exitButton.Visible = false;
             newButton.Visible = false;
-            //TODO: remove this screen and start the GameScreen
+            //removes this screen and start the GameScreen
             GameScreen gs = new GameScreen();
             this.Controls.Add(gs);
             gs.Location = new Point((this.Width - gs.Width) / 2, (this.Height - gs.Height) / 2);
+            
         }
 
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            //TODO: end the application
+            //ends the application
             Application.Exit();
         }
 

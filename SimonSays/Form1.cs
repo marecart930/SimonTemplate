@@ -14,8 +14,9 @@ namespace SimonSays
 {
     public partial class Form1 : Form
     {
-        //TODO: create a List to store the pattern. Must be accessable on other screens
+        //List to store pattern
         public static List<int> patternList = new List<int>();
+
         public static SoundPlayer green = new SoundPlayer (Properties.Resources.green);
         public static SoundPlayer yellow = new SoundPlayer(Properties.Resources.yellow);
         public static SoundPlayer blue = new SoundPlayer(Properties.Resources.blue);
@@ -28,7 +29,7 @@ namespace SimonSays
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //TODO: Launch MenuScreen
+            //launches menu screen when Form1 loads 
             MenuScreen ms = new MenuScreen();
             this.Controls.Add(ms);
             ms.Location = new Point((this.Width - ms.Width) / 2, (this.Height - ms.Height) / 2);

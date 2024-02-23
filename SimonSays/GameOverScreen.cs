@@ -18,13 +18,17 @@ namespace SimonSays
 
         private void GameOverScreen_Load(object sender, EventArgs e)
         {
-            //TODO: show the length of the pattern
+            //shows the length of the pattern
             lengthLabel.Text = $"{GameScreen.round - 1}";
         }
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            //TODO: close this screen and open the MenuScreen
+            //closes this screen and open the MenuScreen
+            patternLabel.Visible = false;
+            closeButton.Visible = false;
+            gameOverLabel.Visible = false;
+            lengthLabel.Visible = false;    
             MenuScreen ms = new MenuScreen();
             this.Controls.Add(ms);
             ms.Location = new Point((this.Width - ms.Width) / 2, (this.Height - ms.Height) / 2);
